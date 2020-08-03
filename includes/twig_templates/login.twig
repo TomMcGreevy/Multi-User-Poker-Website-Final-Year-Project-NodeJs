@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>P17234645</title>
+   <link rel="stylesheet" type="text/css" href="/css/loginregstyles.css" crossorigin="anonymous">
+</head>
+<body>
+   <div id="container">
+      {% set messages = getMessages() %}
+      {% if messages.error is defined %}
+      <div id="error">
+         {%for message in messages.error%}
+         {{message}} 
+         {% endfor %}
+      </div>
+      {% endif %}
+      {% if messages.info is defined %}
+      <div id="info"> {{messages.info}} </div>
+      {% endif %}
+      <div id="login-form">
+         <form action="/sendlogin" method="post">
+            <div id="login" >
+               Login
+            </div>
+            <br><br>
+            <div id="username" class="entry"  >
+               <div id="username_label" class="label">
+                  Username
+               </div>
+               <input id="username_space" class="input" name="username" type="text" size="30" maxlength="50" required="required">
+            </div>
+            <br><br>
+            <div id="password" class="entry"  >
+               <div id="password_label" class="label">
+                  Password
+               </div>
+               <input id="password_space" class="input" name="password" type="password" size="30" maxlength="32" minlength="6" required="required">
+            </div>
+                <br><br> <br>
+            <div id="buttons">
+               <input id="btn_login" class ="button" type="submit" value="Login" >
+               <div id="signup" class="button">
+               <div id="signtext">Sign Up</div>
+
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <footer>
+      <script defer src="/js/loginregister.js"></script>    
+   </footer>
+</body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Lobby</title>
+      <script defer src="http://localhost:4569/socket.io/socket.io.js"></script>
+      <link rel="stylesheet" type="text/css" href="/css/lobby.css" crossorigin="anonymous">
+   </head>
+   <body>
+      {% set messages = getMessages() %}
+      {% if messages.error is defined %}
+      <div id="error" class="showmessages"> {{messages.error}} </div>
+      {% else %}
+      <div id="error"></div>
+      {% endif %}
+      {% if messages.info is defined %}
+      <div id="info" class="showmessages"> {{messages.info}} </div>
+      {% else %}
+      <div id="info"></div>
+      {% endif %}
+      <div id="addchipsbox" class="rectangle">
+         <form id="addchipsform" action="/addchips" method="POST">
+            <div id="closeimg2">
+               <div id="closeimg2pic"></div>
+            </div>
+            <div id="addchipslabel" class="label">
+               Add Chips
+            </div>
+            <div id="chips_description" >
+               *You may only add chips when you have less than 1000*<br/>
+               *1000 chip add on maximum*
+            </div>
+            <div id="chips" class="entry"  >
+               <div id="chips_label" class="label">
+                  Chips 
+               </div>
+               <input id="addchips_space" class="input" name="chips" type="number" required="required">
+            </div>
+            <input id="btn_add_chips" class ="button" type="submit" value="Add Chips" >
+         </form>
+      </div>
+      <div id="buyinbox" class="rectangle">
+         <form id="buyin" action="/buyin" method="POST">
+            <div id="closeimg">
+               <div id="closeimg2pic"></div>
+            </div>
+            <div id="jointable" >
+               Join Table
+            </div>
+            <div id="table" class="entry"  >
+               <div id="tableid_label" class="label">
+                  Table
+               </div>
+               <input id="tableid_space" class="input" name="table_id" type="number" size="30" maxlength="50" required="required" readonly>
+            </div>
+            <div id="chips" class="entry"  >
+               <div id="chips_label2" class="label">
+                  Chips
+               </div>
+               <input id="chips_space" class="input" name="chips" type="number" required="required">
+            </div>
+            <input id="btn_join_table" class ="button" type="submit" value="Join Table" >
+         </form>
+      </div>
+      <div id="blur">
+         <div id="logoutbg">
+            <div id="logout"></div>
+         </div>
+         <div id="icon">
+            <img src="/media/assets/lobby/usericon.png" id="usericon" />
+         </div>
+         <div id="username">
+            {{username}}
+         </div>
+         <div id="addchips">
+            <div id="chipspic"></div>
+         </div>
+         <div id="balance">
+            ${{balance}}
+         </div>
+         <div id="tablesdiv" class="rectangle">
+            <div id="scroll">
+               <table id="games"  class="display" style="width:100%" style="overflow-x:auto" cellspacing="0">
+                  <thead>
+                     <tr>
+                        <th>Table ID</th>
+                        <th>Blinds</th>
+                        <th>Seats</th>
+                        <th>Players</th>
+                        <th>Join</th>
+                     </tr>
+                  <tbody>
+                  </tbody>
+                  </thead>
+               </table>
+            </div>
+         </div>
+         <div id="formbox" class="rectangle">
+            <form id="createtable" action="/createtable" method="POST">
+               <div id="tablelabel" >
+                  Create a Table
+               </div>
+               <div id="big_blinds" class="entry"  >
+                  <div id="big_blinds_label" class="label">
+                     Big Blinds
+                  </div>
+                  <input id="big_blinds_space" class="input" name="bigblinds" type="number" size="30" maxlength="50" required="required">
+               </div>
+               <div id="seats" class="entry"  >
+                  <div id="seats_label" class="label">
+                     Seats
+                  </div>
+                  <input id="seats_space" class="input" name="seats" type="number" size="1" maxlength="1" required="required">
+               </div>
+               <input id="btn_create_table" class ="button" type="submit" value="Create Table" >
+            </form>
+         </div>
+         
+      </div>
+
+          <a id="guide" href="https://www.888poker.com/en/texas-holdem-poker-rules.pdf">Poker Rules & Hand Rankings >>></a>
+          
+   </body>
+   <footer>
+      <script defer src="/js/lobby.js"></script>    
+   </footer>
+</html>

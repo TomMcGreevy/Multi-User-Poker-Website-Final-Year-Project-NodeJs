@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Table {{table_id}}</title>
+      <script defer src="http://localhost:4569/socket.io/socket.io.js"></script>
+      <link rel="stylesheet" type="text/css" href="/css/game.css" crossorigin="anonymous">
+   </head>
+   <body>
+      <div id="error"></div>
+      <div id="backbg">
+         <div id="back"></div>
+      </div>
+      <div id="cards">
+         <div id="card1"></div>
+         <div id="card2"></div>
+      </div>
+      </div>
+      <div id="background">
+         <div id="seat5" class="playericon">
+            <div id="seat5bets" class="bets"></div>
+            <div id="seat5container" class="opponentcontainer">
+               <div id="seat5card1" class="playercard" class="playerphoto"></div>
+               <div id="seat5card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat5chips" class="playername"></div>
+         </div>
+         <div id="seat6" class="playericon">
+            <div id="seat6bets" class="bets"></div>
+            <div id="seat6container" class="opponentcontainer">
+               <div id="seat6card1" class="playercard" class="playerphoto"></div>
+               <div id="seat6card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat6chips" class="playername">1234</div>
+         </div>
+         <div id="seat4" class="playericon">
+            <div id="seat4bets" class="bets"></div>
+            <div id="seat4container" class="opponentcontainer">
+               <div id="seat4card1" class="playercard" class="playerphoto"></div>
+               <div id="seat4card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat4chips" class="playername"></div>
+         </div>
+         <div id="seat7" class="playericon">
+            <div id="seat7bets" class="bets"></div>
+            <div id="seat7container" class="opponentcontainer">
+               <div id="seat7card1" class="playercard" class="playerphoto"></div>
+               <div id="seat7card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat7chips" class="playername">1234</div>
+         </div>
+         <div id="seat3" class="playericon">
+            <div id="seat3bets" class="bets"></div>
+            <div id="seat3container" class="opponentcontainer">
+               <div id="seat3card1" class="playercard" class="playerphoto"></div>
+               <div id="seat3card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat3chips" class="playername"></div>
+         </div>
+         <div id="seat8" class="playericon">
+            <div id="seat8bets" class="bets"></div>
+            <div id="seat8container" class="opponentcontainer">
+               <div id="seat8card1" class="playercard" class="playerphoto"></div>
+               <div id="seat8card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat8chips" class="playername"></div>
+         </div>
+         <div id="seat2" class="playericon">
+            <div id="seat2bets" class="bets"></div>
+            <div id="seat2container" class="opponentcontainer">
+               <div id="seat2card1" class="playercard" class="playerphoto"></div>
+               <div id="seat2card2" class="playercard" class="playerphoto"></div>
+            </div>
+            <div id="seat2chips" class="playername"></div>
+         </div>
+         <div id="seat9" class="playericon">
+            <div id="seat9bets" class="bets"></div>
+            <div id="seat9container" class="opponentcontainer">
+               <div id="seat9card1" class="playercard"></div>
+               <div id="seat9card2" class="playercard"></div>
+            </div>
+            <div id="seat9chips" class="playername"></div>
+         </div>
+         <div id="community">
+            <div id="communitycard1"></div>
+            <div id="communitycard2"></div>
+            <div id="communitycard3"></div>
+            <div id="communitycard4"></div>
+            <div id="communitycard5"></div>
+            <h1 id="pot">Pot: </h1>
+         </div>
+      </div>
+      <div id="seat1bets" class="bets"></div>
+      <div id="seat1chips" class="playername"></div>
+      <div id="game">
+      <div id="betbuttons">
+         <input id="btn_checkcall" class ="button" type="submit" value="Check" >
+         <input id="btn_raise" class ="button" type="submit" value="Raise" >
+         <input id="btn_fold" class ="button" type="submit" value="Fold" >
+      </div>
+      <div id="slidercontainer">
+         <div class="slider">
+            <input type="range" min={{bb}} max={{buyin}} class="slider" id="myRange">
+         </div>
+      </div>
+   </body>
+   <footer>
+      <script defer src="/js/game.js"></script>    
+   </footer>
+</html>

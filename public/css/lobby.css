@@ -1,0 +1,452 @@
+/* Lobby Styles */
+
+#usericon {
+	z-index: 10;
+	width: 171px;
+	height: 171px;
+}
+
+#icon {
+	z-index: 10;
+	float: right;
+	clear: right;
+	position: absolute;
+	right: 125px;
+	top: 3px;
+}
+#guide {
+	position: absolute;
+	bottom:20px;
+	left:20px;
+	font-family: Segoe UI Historic;
+	color: #43425d;
+	text-decoration: none;
+}
+
+#usericon {
+	height: 100px;
+	width: 100px;
+}
+
+.rectangle {
+	border: 4px solid #98ccf9;
+	-ms-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+	-o-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+	-webkit-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.41);
+	background: rgba(255, 255, 255, 255);
+}
+
+#btn_add_chips {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: 38%;
+}
+
+#btn_join_table {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: 30%;
+}
+
+#tablesdiv {
+	width: 66vw;
+	min-width: 250px;
+	min-width: 450px;
+	padding: 30px;
+	height: 100%;
+}
+
+#scroll {
+	border: 2px black solid;
+	height: 70vh;
+	min-height: 250px;
+	overflow-y: scroll;
+}
+
+#games {
+	border-collapse: collapse;
+	height: 100%;
+}
+
+th {
+	font-family: Segoe UI Historic;
+	color: #43425d;
+	background-color: #98ccf9;
+	border: 0;
+	border-bottom: 2px solid;
+}
+
+tr {
+	font-family: Segoe UI Historic;
+	color: #43425d;
+	text-align: center;
+	border-bottom: 1px solid;
+}
+
+.entry {
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.label {
+	text-align: center;
+	padding-top: 4vh;
+	white-space: nowrap;
+	font-family: Segoe UI Historic;
+	font-size: 15px;
+	color: #43425d;
+}
+
+.input {
+	cursor: pointer;
+	text-align: center;
+	border-width: 0px;
+	border: none;
+	outline: none;
+	border-bottom: 4px solid #98ccf9;
+	white-space: nowrap;
+	font-family: Segoe UI Historic;
+	font-size: 15px;
+}
+
+.button {
+	cursor: pointer;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #43425d;
+	font-family: Segoe UI Historic;
+	font-size: 18px;
+	text-align: center;
+	color: #43425d;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#tableid_label {
+	padding-left: 46px;
+}
+
+#btn_create_table {
+	margin-top: 3vh;
+	background: rgba(152, 204, 249, 255);
+}
+
+#createtable {
+	min-width: 140px;
+	text-align: center;
+	font-family: Segoe UI Historic;
+	color: #43425d;
+}
+
+#jointable {
+	margin-left: 35px;
+	padding-top: 20px;
+	min-width: 140px;
+	text-align: center;
+	font-weight: bold;
+	font-family: Segoe UI Historic;
+	color: #43425d;
+}
+
+#addchipslabel {
+	font-weight: bold;
+	margin-left: 12%;
+	padding-top: 20px;
+	min-width: 140px;
+	text-align: center;
+	font-family: Segoe UI Historic;
+	color: #43425d;
+}
+
+#chips_description {
+	padding-top: 10px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI Historic;
+	color: #43425d;
+}
+
+#formbox {
+	padding: 10px;
+	min-width: 140px;
+	min-height: 175px;
+	width: 18vw;
+	height: 45vh;
+	position: absolute;
+	top: 120px;
+	right: 2vw;
+	align-items: -webkit-baseline-middle;
+}
+
+#buyinbox {
+	padding: 20px;
+	z-index: 5;
+	transform: scale(0);
+	width: fit-content;
+	position: absolute;
+	align-self: center;
+	top: 33%;
+	left: 33%;
+	margin-left: 0 auto;
+	margin-right: auto;
+}
+
+#closeimg {
+	margin-top: 5px;
+	margin-right: 5px;
+	background: #98ccf9;
+	height: 35px;
+	width: 35px;
+	border: 3px solid black;
+	border-radius: 100px;
+	float: right;
+}
+
+#closeimgpic {
+	background: url('../../media/assets/lobby/close.png') no-repeat center;
+	background-size: 30px 30px;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+#closeimg2 {
+	background: #98ccf9;
+	margin-top: 5px;
+	margin-right: 5px;
+	height: 35px;
+	width: 35px;
+	border: 3px solid black;
+	border-radius: 100px;
+	float: right;
+}
+
+#closeimg2pic {
+	background: url('../../media/assets/lobby/close.png') no-repeat center;
+	background-size: 30px 30px;
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+}
+
+#logout {
+	background: url('../../media/assets/lobby/logout.png') no-repeat center;
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	margin-left: 7px;
+	margin-top: 7px;
+}
+
+#logoutbg {
+	z-index: 9;
+	float: right;
+	clear: right;
+	position: absolute;
+	right: 230px;
+	top: 27px;
+	background-color: #98ccf9;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#username {
+	z-index: 9;
+	float: right;
+	clear: right;
+	position: absolute;
+	right: 3px;
+	top: 27px;
+	font-family: Segoe UI Historic;
+	background: #98ccf9;
+	text-align: center;
+	width: 125px;
+	height: 30px;
+	border: 3px solid black;
+}
+
+#balance {
+	z-index: 8;
+	float: right;
+	clear: right;
+	position: absolute;
+	right: 33px;
+	top: 57px;
+	font-family: Segoe UI Historic;
+	background: #98ccf9;
+	text-align: center;
+	padding-right: 9px;
+	width: 89px;
+	height: 23px;
+	border: 3px solid black;
+	white-space: nowrap;
+}
+
+#addchips {
+	position: absolute;
+	text-align: center;
+	font-family: Segoe UI Historic;
+	font-weight: bold;
+	font-size: 30px;
+	z-index: 9;
+	right: 5.5px;
+	top: 55px;
+	border: 3px solid black;
+	background: #98ccf9;
+	border-radius: 100px;
+	height: 30px;
+	width: 30px;
+}
+
+#chipspic {
+	background: url('../../media/assets/lobby/chip_black_top_large.png') no-repeat center;
+	background-size: 25px 25px;
+	height: 30px;
+	width: 30px;
+}
+
+#addchips:hover,
+#logout:hover {
+	cursor: pointer;
+}
+
+#addchips h1 {
+	text-align: center;
+	vertical-align: middle;
+	font-family: Segoe UI Historic;
+	font-weight: bold;
+}
+
+#addchipsbox {
+	padding: 20px;
+	z-index: 5;
+	transform: scale(0);
+	width: fit-content;
+	position: absolute;
+	align-self: center;
+	top: 33%;
+	left: 33%;
+	margin-left: 0 auto;
+	margin-right: auto;
+}
+
+#error {
+	z-index: 15;
+	text-align: center;
+	position: absolute;
+	width: 94%;
+	transform: scale(0);
+	background-color: #c5261b;
+	color: #a4a4ad;
+	margin-bottom: 15px;
+	font-family: Segoe UI Historic;
+	border-radius: 20px;
+}
+
+#info {
+	position: absolute;
+	width: 94%;
+	z-index: 15;
+	text-align: center;
+	transform: scale(0);
+	background-color: #119400;
+	color: #84ff79;
+	margin-bottom: 15px;
+	font-family: Segoe UI Historic;
+	border-radius: 20px;
+}
+
+.showmessages {
+	animation: showmessages;
+	animation-duration: 5s;
+}
+
+@keyframes showmessages {
+	0% {
+		padding: 10px;
+		transform: scale(1);
+		transform: translateY(-400px);
+	}
+	5% {
+		padding: 10px;
+		transform: scale(1);
+		transform: translateY(0);
+	}
+	95% {
+		padding: 10px;
+		transform: scale(1);
+		transform: translateY(0);
+	}
+	100% {
+		padding: 10px;
+		transform: scale(1);
+		transform: translateY(-400px);
+	}
+}
+
+@-moz-document url-prefix() {
+	#buyinbox {
+		width: -moz-fit-content;
+	}
+	#addchipsbox {
+		width: -moz-fit-content;
+	}
+  }
+
+  
+@supports (-ms-ime-align: auto) {
+	#buyinbox {
+		display: table;
+	}
+	#addchipsbox {
+		display: table;
+	}
+	#btn_create_table {
+		margin-left: 30%;
+	}
+	#btn_join_table {
+		margin-left: 40%;
+	}
+ }
+ 
+ @supports (-ms-accelerator: true) {
+	#buyinbox {
+		display: table;
+	}
+	#addchipsbox {
+		display: table;
+	}
+	#btn_create_table {
+		margin-left: 30%;
+	}
+	#btn_join_table {
+		margin-left: 40%;
+	}
+ }
+ 
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#buyinbox {
+		display: table;
+	}
+	#addchipsbox {
+		display: table;
+	}
+	#btn_create_table {
+		margin-left: 30%;
+	}
+	#btn_join_table {
+		margin-left: 40%;
+	}
+ }
